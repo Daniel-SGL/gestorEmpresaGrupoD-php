@@ -14,7 +14,7 @@ services:
     env_file: .env
     volumes:
       - dbdata:/var/lib/mysql
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./db:/docker-entrypoint-initdb.d:ro
   phpmyadmin:
     image: phpmyadmin:latest
     ports:
