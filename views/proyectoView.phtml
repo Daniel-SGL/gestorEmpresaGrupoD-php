@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+</head>
+<body>
+    <?php
+    echo "<h1>Proyecto # " . $proyecto->getIdProyecto() . "</h1>";
+    echo "Nombre: " . $proyecto->getNombre() . "<br>";
+    echo "Descripción: " . $proyecto->getDescripcion() . "<br>";
+    echo "Fecha de Inicio: " . $proyecto->getFechaInicio() . "<br>";
+    echo "Estado: " . $proyecto->getEstado() . "<br>";
+?>
+</body>
+</html>
