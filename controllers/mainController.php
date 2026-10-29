@@ -17,6 +17,8 @@ require __DIR__ . '/presupuestoController.php';
 require __DIR__ . '/facturaController.php';
 
 // grupo D: proyectos
+require_once __DIR__ . '/../models/Proyecto.php';
+require_once __DIR__ . '/../repositories/ProyectoRepository.php';
 require __DIR__ . '/proyectoController.php';
 
 // si ningun controller ha cargado una vista, la de inicio
