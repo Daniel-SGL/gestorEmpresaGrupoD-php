@@ -1,33 +1,37 @@
 <?php
     class Proyecto {
-    
-        private $id;
-        private $presupuesto_id;
-        private $facturas_id;
-        private $contenido;
-        private $fecha_creacion;
+        private $id_proyecto;
+        private $id_usuario;
+        private $nombre;
+        private $descripcion;
+        private $fecha_inicio;
+        private $estado;
 
-        public function __construct($id, $presupuesto_id, $facturas_id, $contenido, $fecha_creacion) {
-            $this->id = $id;
-            $this->presupuesto_id = $presupuesto_id;
-            $this->facturas_id = $facturas_id;
-            $this->contenido = $contenido;
-            $this->fecha_creacion = $fecha_creacion;
+        public function __construct($id_proyecto,$id_usuario, $nombre,$descripcion, $fecha_inicio,$estado) {
+            $this->id_proyecto =$id_proyecto;
+            $this->id_usuario =$id_usuario;
+            $this->nombre =$nombre;
+            $this->descripcion =$descripcion;
+            $this->fecha_inicio =$fecha_inicio;
+            $this->estado =$estado;
         }
-        public function getId() {
-            return $this->id;
+        public function getIdProyecto() {
+            return $this->id_proyecto;
         }
-        public function getPresupuestoId() {
-            return $this->presupuesto_id;
+        public function getIdUsuario() {
+            return $this->id_usuario;
         }
-        public function getFacturasId() {
-            return $this->facturas_id;
+        public function getNombre() {
+            return $this->nombre;
         }
-        public function getContent() {
-            return $this->contenido;
+        public function getDescripcion() {
+            return $this->descripcion;
         }
-        public function getCreatedAt() {
-            return $this->fecha_creacion;
+        public function getFechaInicio() {
+            return $this->fecha_inicio;
+        }
+        public function getEstado() {
+            return $this->estado;
         }
     }
-?>    
+?>
