@@ -1,0 +1,2 @@
+<?php
+// grupo A: productos
